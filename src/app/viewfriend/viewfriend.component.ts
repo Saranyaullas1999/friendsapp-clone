@@ -12,10 +12,12 @@ export class ViewfriendComponent implements OnInit {
     this.fetchData()
   }
 
+  status:boolean=false
   fetchData=()=>{
     this.myapi.viewData().subscribe(
       (data)=>{
         this.friendData=data
+        this.status=true
       }
     )
   }

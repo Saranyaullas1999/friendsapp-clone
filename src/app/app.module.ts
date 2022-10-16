@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddfriendComponent } from './addfriend/addfriend.component';
 import { RouterModule ,Routes} from '@angular/router';
+import { ViewfriendComponent } from './viewfriend/viewfriend.component';
 
 
 
@@ -13,13 +14,17 @@ import { RouterModule ,Routes} from '@angular/router';
 const appRoutes:Routes =[
   {
     path:"",component:AddfriendComponent
+  },
+  {
+    path:"view",component:ViewfriendComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddfriendComponent
+    AddfriendComponent,
+    ViewfriendComponent
   ],
   imports: [
     BrowserModule,

@@ -11,4 +11,9 @@ export class ApiService {
   viewData=()=>{
     return this.http.get("http://dummyapifriends.herokuapp.com/view")
   }
+
+    friendView=(data:any)=>{
+        return this.http.post("https://dummyapifriends.herokuapp.com/adddata",data)
+    }
+  
 }

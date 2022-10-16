@@ -22,12 +22,19 @@ export class AddfriendComponent implements OnInit {
       "DescribeYourFriend":this.DescribeYourFriend
     }
     console.log(data)
+    
     this.myapi.friendView(data).subscribe(
       (res)=>{
         console.log(res)
         alert("Successfully added")
+        this.name=""
+    this.friendName=""
+    this.friendNickName=""
+    this.DescribeYourFriend=""
       }
+      
     )
+    
   }
 
 
